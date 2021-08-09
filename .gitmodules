@@ -1,7 +1,0 @@
-[submodule "webpage"]
-	path = webpage
-	url = git@github.com:AlexKehl/webpage-next.git
-
-[submodule "server"]
-	path = server
-	url = git@github.com:AlexKehl/website-backend.git

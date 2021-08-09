@@ -1,14 +1,8 @@
 import { Category } from './Constants'
-import { ImageSize } from './GalleryImages'
+import { GalleryImageMeta } from './GalleryImages'
 
-export interface GalleryImageDto {
-  category: Category
-  description?: string
+export interface GalleryImageDto extends GalleryImageMeta {
   image: string
-  isForSell: boolean
-  name: string
-  price?: number
-  size: ImageSize
 }
 
 export interface LoginDto {

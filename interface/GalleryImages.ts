@@ -1,10 +1,5 @@
 import { Category } from './Constants'
 
-export interface ImageSize {
-  width: number
-  height: number
-}
-
 export interface GalleryImageMeta {
   category: Category
   description?: string
@@ -12,5 +7,6 @@ export interface GalleryImageMeta {
   isForSell: boolean
   name: string
   price?: number
-  size: ImageSize
+  width: number
+  height: number
 }

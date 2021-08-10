@@ -1,16 +1,12 @@
-import { Category } from './Constants'
-
-export interface ImageSize {
-  width: number
-  height: number
-}
+import { Category } from "./Constants";
 
 export interface GalleryImageMeta {
-  category: Category
-  description?: string
-  id?: string
-  isForSell: boolean
-  name: string
-  price?: number
-  size: ImageSize
+  category: Category;
+  description?: string;
+  id?: string;
+  isForSell: boolean;
+  name: string;
+  price?: number;
+  width: number;
+  height: number;
 }

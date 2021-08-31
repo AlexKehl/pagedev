@@ -4,7 +4,7 @@ const tryCatch = async <T extends Error, U>(
   try {
     const res = await fn()
     return [null, res]
-  } catch (e) {
+  } catch (e: any) {
     return [e, null]
   }
 }

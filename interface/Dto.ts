@@ -19,3 +19,7 @@ export interface DeleteGalleryImageDto {
   category: Category
   name: string
 }
+
+export interface ConfirmEmailDto {
+  token: string
+}

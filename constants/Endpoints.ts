@@ -7,7 +7,8 @@ export const Endpoints = {
   galleryCategoryList: '/files/:category',
   galleryGetImage: '/files/:category/:name',
   refreshAccessToken: '/refreshtoken',
-}
+  emailConfirm: '/confirm',
+} as const
 
 export const staticEndPointPart = (endpoint: keyof typeof Endpoints) => {
   return Endpoints[endpoint].split(':')[0] as string

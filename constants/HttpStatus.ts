@@ -1,4 +1,4 @@
-export default {
+const HttpStatus = {
   CONTINUE: 100,
   SWITCHING_PROTOCOLS: 101,
   PROCESSING: 102,
@@ -46,4 +46,6 @@ export default {
   SERVICE_UNAVAILABLE: 503,
   GATEWAY_TIMEOUT: 504,
   HTTP_VERSION_NOT_SUPPORTED: 505,
-};
+} as const
+
+export default HttpStatus

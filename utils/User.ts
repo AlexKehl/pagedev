@@ -1,7 +1,7 @@
 import { Role } from '../interface/Constants'
 import { User } from '../interface/ConsumerResponses'
 
-const hasRole = ({ user, role }: { user: User | null; role: Role }) => {
+const hasRole = ({ user, role }: { user?: User; role: Role }) => {
   if (!user) {
     return false
   }

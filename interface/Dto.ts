@@ -17,7 +17,7 @@ export interface RegisterDto {
 
 export interface DeleteGalleryImageDto {
   category: Category
-  name: string
+  id: GalleryImageMeta['id']
 }
 
 export interface ConfirmEmailDto {

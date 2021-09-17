@@ -11,7 +11,7 @@ const tryCatch = async <T extends Error, U>(
 
 const asyncTimeout =
   (timeInMs: number) =>
-  <T>(val?: T) => {
+  <T>(val: T): Promise<T> => {
     return new Promise((resolve) => {
       setTimeout(() => resolve(val), timeInMs)
     })

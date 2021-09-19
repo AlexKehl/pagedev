@@ -8,6 +8,7 @@ export const Endpoints = {
   galleryGetImage: '/files/:category/:name',
   refreshAccessToken: '/refreshtoken',
   emailConfirm: '/confirm',
+  checkout: '/create-checkout-session',
 } as const
 
 export const staticEndPointPart = (endpoint: keyof typeof Endpoints) => {

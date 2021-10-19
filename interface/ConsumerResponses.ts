@@ -17,3 +17,7 @@ export interface User {
 export interface LoginResponse extends BaseResponse {
   user: User
 }
+
+export interface GalleryImagePaymentResponse extends BaseResponse {
+  redirect: string
+}

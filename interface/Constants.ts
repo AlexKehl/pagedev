@@ -1,3 +1,3 @@
 export type Role = 'Admin' | 'RegisteredUser'
 
-export type Category = 'acryl' | 'oil'
+export type Category = 'acryl' | 'oil' | 'graphics' | 'other'
